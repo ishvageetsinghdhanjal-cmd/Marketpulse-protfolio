@@ -21,29 +21,9 @@ market concepts in plain language.
 | Framework | TanStack Start (React 19, TanStack Router) |
 | Styling | Tailwind CSS 4 |
 | Charts | Chart.js / react-chartjs-2 |
-| Database | Netlify Database (Postgres) via Drizzle ORM |
-| AI | Netlify AI Gateway (Anthropic Claude) |
+| Database | Database (Postgres) via ORM |
+| AI | (Anthropic Claude) |
 | Market data | Twelve Data API (optional), with a simulated fallback feed |
 | Deployment | Netlify |
 
-## Running locally
 
-```bash
-pnpm install
-pnpm dev
-```
-
-The app runs at `http://localhost:3000`. For full Netlify emulation (database, AI Gateway, etc.), use:
-
-```bash
-netlify dev
-```
-
-## Real-time market data
-
-By default, prices are simulated so the app works with zero configuration. To show real NSE/BSE prices,
-add a `TWELVE_DATA_API_KEY` environment variable (see the in-app **Learn** page for details).
-
-## License
-
-MIT — open source. See the About page in the app for more details.
